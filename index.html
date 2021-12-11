@@ -5,6 +5,7 @@
     <style>
       body, html {
         height: 100%;
+        background-color: black;
       }
 
       body {
@@ -14,24 +15,29 @@
         flex-direction: column;
       }
 
-      #canvas {
-        border: 1px solid;
-      }
-
       button {
         margin: 5px;
         padding: 1em;
-        border-radius: 0.25em;
-        border: 1px solid;
+        /* border-radius: 0.25em; */
+        border: 1px solid rgb(150, 48, 95);
+        background-color: rgb(206, 137, 158);
+        color: rgb(240, 218, 224);
+      }
+
+      #buttons {
+        display: flex;
       }
     </style>
   </head>
   <body>
 
-    <canvas id="canvas" width="300" height="300"></canvas>
-    
-    <button id="button-play">Play</button>
-    <button id="button-pause">Stop</button>
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+
+    <div id='buttons'>
+      <button id="button-play">Play</button>
+      <button id="button-pause">Stop</button>
+    </div>
 
     <script src="main.js" type="module"></script>
   </body>
